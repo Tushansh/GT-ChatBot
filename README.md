@@ -10,10 +10,6 @@ A modern AI-powered chatbot built using React, featuring email/password authenti
 - 🌗 **Dark Mode Support** – Toggle between light and dark themes.  
 - 🎥 **Chatbot Preview** – Video or interactive chatbot preview on the authentication page.  
 
-## 📸 Screenshots
-
-Coming soon!
-
 ## 🛠️ Tech Stack
 
 - **Frontend:** React, CSS Modules  
@@ -55,4 +51,4 @@ Feel free to submit issues and pull requests!
 
 ## 📜 License
 
-This project is open-source and available under the MIT License.  
+This project is open-source  
