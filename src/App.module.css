@@ -1,0 +1,56 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  height: 100vh;
+  padding: 16px;
+}
+
+.Header {
+  text-align: center;
+}
+
+.Logo {
+  width: 64px;
+  height: 64px;
+}
+
+.Title {
+  margin: 0;
+}
+
+.ChatContainer {
+  flex-grow: 1;
+  width: 100%;
+  background: light-dark(#ffffff, #212121);
+  border-radius: 16px;
+  overflow-y: auto;
+}
+
+.ThemeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.ThemeButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Icon {
+  width: 34px;
+  height: 34px;
+  fill: white, black;
+}
+
+

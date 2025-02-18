@@ -1,0 +1,221 @@
+/* 🔹 Full-page split layout */
+.AuthPage {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a2e);
+    color: white;
+  }
+  
+  /* 🔹 Left section (AI chatbot description) */
+  .InfoSection {
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* 🔹 Main Title */
+  .InfoSection h1 {
+    font-size: 42px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* 🔹 Subheading */
+  .InfoSection h3 {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.9;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  /* 🔹 Description */
+  .InfoSection p {
+    font-size: 16px;
+    max-width: 500px;
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* 🔹 AI Chatbot Features (Bullet Points) */
+  .FeaturesList {
+    text-align: left;
+    max-width: 450px;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .FeaturesList li {
+    font-size: 16px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* 🔹 Feature Icons */
+  .FeatureIcon {
+    color: #00c6ff;
+    font-size: 18px;
+  }
+  
+  /* 🔹 AI Chatbot illustration */
+  .HeroImage {
+    width: 80%;
+    max-width: 100px;
+    animation: float 3s infinite ease-in-out;
+    margin-top: 20px;
+  }
+
+  .HeroImageSign {
+    width: 80%;
+    max-width: 100px;
+    max-height: 90px;
+    animation: float 3s infinite ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* 🔹 Call-to-Action Button */
+  .CTAButton {
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .CTAButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5);
+  }
+  
+  /* 🔹 Fade-in Animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* 🔹 Right section (Login/Signup form) */
+  .AuthContainer {
+    flex: 1;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* 🔹 Form fields */
+  .AuthContainer input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    outline: none;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  /* 🔹 Glowing effect when input is focused */
+  .AuthContainer input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+  
+  /* 🔹 Buttons */
+  .AuthContainer button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  /* 🔹 Button hover effect */
+  .AuthContainer button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5);
+  }
+  
+  /* 🔹 Password input field container */
+.AuthContainer .PasswordContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* 🔹 Password input field */
+  .AuthContainer .PasswordContainer input {
+    flex: 1;
+    padding-right: 45px; /* 🔹 Extra space for the toggle button */
+  }
+  
+  /* 🔹 Password visibility toggle button */
+  .AuthContainer .TogglePassword {
+    position: absolute;
+    left: 79%;
+    top: 18%;
+    max-width: 20%;
+    /*transform: translateY(-50%);*/
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #00c6ff;
+    font-weight: bold;
+  }
+  
+  /* 🔹 Error message styling */
+  .AuthContainer .Error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* 🔹 Google Login Button */
+  .AuthContainer .GoogleButton {
+    background: linear-gradient(90deg, #db4437, #a33127);
+    margin-top: 10px;
+  }
+
+  .AuthContainer .SignupBtn {
+    cursor: pointer;
+    color: #00c6ff;
+  }
+  
+  /* 🔹 Floating animation */
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
